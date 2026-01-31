@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List | JavaScript</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>📝 Minhas Tarefas</h1>
+
+    <form id="form">
+      <input 
+        type="text" 
+        id="input-tarefa" 
+        placeholder="Digite uma tarefa..."
+        required
+      />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+  <button data-filtro="todas" class="ativo">Todas</button>
+  <button data-filtro="ativas">Ativas</button>
+  <button data-filtro="concluidas">Concluídas</button>
+</div>
+
+<p class="contador">0 tarefas</p>
+
+
+    <ul id="lista-tarefas"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
